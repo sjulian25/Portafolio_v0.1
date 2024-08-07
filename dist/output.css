@@ -585,6 +585,11 @@ video {
   margin-bottom: 0.5rem;
 }
 
+.my-12 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
 .mt-5 {
   margin-top: 1.25rem;
 }
@@ -639,6 +644,14 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[84\%\] {
+  width: 84%;
+}
+
+.w-\[85\%\] {
+  width: 85%;
 }
 
 .flex-col {
@@ -697,6 +710,10 @@ video {
   background-image: url('./img/profilePicture.png');
 }
 
+.bg-\[url\(\'\.\/img\/profilePicture2\.png\'\)\] {
+  background-image: url('./img/profilePicture2.png');
+}
+
 .bg-cover {
   background-size: cover;
 }
@@ -740,6 +757,14 @@ video {
 
 .pr-2 {
   padding-right: 0.5rem;
+}
+
+.pt-8 {
+  padding-top: 2rem;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .font-roboto {
@@ -795,6 +820,16 @@ video {
 .text-stone-900 {
   --tw-text-opacity: 1;
   color: rgb(28 25 23 / var(--tw-text-opacity));
+}
+
+.text-slate-700 {
+  --tw-text-opacity: 1;
+  color: rgb(51 65 85 / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .br-2.animado {
@@ -866,6 +901,15 @@ video {
 }
 
 @media (min-width: 1024px) {
+  .lg\:my-28 {
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+  }
+
+  .lg\:flex {
+    display: flex;
+  }
+
   .lg\:h-\[100\%\] {
     height: 100%;
   }
@@ -878,12 +922,40 @@ video {
     height: 850px;
   }
 
+  .lg\:h-auto {
+    height: auto;
+  }
+
   .lg\:w-\[100\%\] {
     width: 100%;
   }
 
   .lg\:w-\[80\%\] {
     width: 80%;
+  }
+
+  .lg\:w-\[87\%\] {
+    width: 87%;
+  }
+
+  .lg\:w-\[20\%\] {
+    width: 20%;
+  }
+
+  .lg\:w-auto {
+    width: auto;
+  }
+
+  .lg\:w-\[50\%\] {
+    width: 50%;
+  }
+
+  .lg\:flex-row {
+    flex-direction: row;
+  }
+
+  .lg\:flex-col {
+    flex-direction: column;
   }
 
   .lg\:self-center {
@@ -894,8 +966,52 @@ video {
     background-image: url('./img/profilePictureDesktop.jpg');
   }
 
+  .lg\:bg-\[url\(\'\.\/img\/profilePicture\.png\'\)\] {
+    background-image: url('./img/profilePicture.png');
+  }
+
+  .lg\:bg-\[url\(\'\.\/img\/profilePictureDesktop\.jpeg\'\)\] {
+    background-image: url('./img/profilePictureDesktop.jpeg');
+  }
+
+  .lg\:bg-\[url\(\'\.\/img\/profilePictureDesktop-removebg\.png\'\)\] {
+    background-image: url('./img/profilePictureDesktop-removebg.png');
+  }
+
+  .lg\:bg-\[url\(\'\.\/img\/profilePictureDesktop2-removebg-edited-shadow\.png\'\)\] {
+    background-image: url('./img/profilePictureDesktop2-removebg-edited-shadow.png');
+  }
+
+  .lg\:bg-\[url\(\'\.\/img\/profilePicture2\.png\'\)\] {
+    background-image: url('./img/profilePicture2.png');
+  }
+
   .lg\:bg-\[length\:450px_576px\] {
     background-size: 450px 576px;
+  }
+
+  .lg\:bg-\[length\:1292px_1616px\] {
+    background-size: 1292px 1616px;
+  }
+
+  .lg\:bg-\[length\:617px_840px\] {
+    background-size: 617px 840px;
+  }
+
+  .lg\:bg-\[length\:243px_237px\] {
+    background-size: 243px 237px;
+  }
+
+  .lg\:bg-\[length\:751px_1002px\] {
+    background-size: 751px 1002px;
+  }
+
+  .lg\:bg-\[length\:376px_501px\] {
+    background-size: 376px 501px;
+  }
+
+  .lg\:bg-\[length\:644px_729px\] {
+    background-size: 644px 729px;
   }
 
   .lg\:bg-center {
