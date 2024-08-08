@@ -590,6 +590,16 @@ video {
   margin-bottom: 0.5rem;
 }
 
+.my-1 {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 .mt-5 {
   margin-top: 1.25rem;
 }
@@ -658,6 +668,14 @@ video {
   align-items: flex-start;
 }
 
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
 .justify-between {
   justify-content: space-between;
 }
@@ -700,10 +718,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-\[url\(\'\.\/img\/profilePicture\.png\'\)\] {
-  background-image: url('./img/profilePicture.png');
 }
 
 .bg-\[url\(\'\.\/img\/profilePicture\.jpg\'\)\] {
@@ -767,6 +781,10 @@ video {
   font-family: Roboto, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+.font-monserrat {
+  font-family: Monserrat, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -788,6 +806,10 @@ video {
 
 .font-medium {
   font-weight: 500;
+}
+
+.font-normal {
+  font-weight: 400;
 }
 
 .leading-10 {
@@ -937,84 +959,8 @@ video {
     align-self: center;
   }
 
-  .lg\:bg-\[url\(\'\.\/img\/profilePicture2-edited\.png\'\)\] {
-    background-image: url('./img/profilePicture2-edited.png');
-  }
-
-  .lg\:bg-\[url\(\'\.\/img\/profilePicture2\.png\'\)\] {
-    background-image: url('./img/profilePicture2.png');
-  }
-
-  .lg\:bg-\[url\(\'\.\/img\/profilePictureDesktop2\.png\.png\'\)\] {
-    background-image: url('./img/profilePictureDesktop2.png.png');
-  }
-
-  .lg\:bg-\[url\(\'\.\/img\/profilePictureDesktop2\.png\'\)\] {
-    background-image: url('./img/profilePictureDesktop2.png');
-  }
-
-  .lg\:bg-\[url\(\'\.\/img\/profilePictureDesktop3\.png\'\)\] {
-    background-image: url('./img/profilePictureDesktop3.png');
-  }
-
   .lg\:bg-\[url\(\'\.\/img\/profilePictureDesktop\.png\'\)\] {
     background-image: url('./img/profilePictureDesktop.png');
-  }
-
-  .lg\:bg-\[length\:644px_729px\] {
-    background-size: 644px 729px;
-  }
-
-  .lg\:bg-\[length\:442px_589px\] {
-    background-size: 442px 589px;
-  }
-
-  .lg\:bg-\[length\:432px_517px\] {
-    background-size: 432px 517px;
-  }
-
-  .lg\:bg-\[length\:433px_490px\] {
-    background-size: 433px 490px;
-  }
-
-  .lg\:bg-\[length\:399px_569px\] {
-    background-size: 399px 569px;
-  }
-
-  .lg\:bg-\[length\:753px_999px\] {
-    background-size: 753px 999px;
-  }
-
-  .lg\:bg-\[length\:703px_949px\] {
-    background-size: 703px 949px;
-  }
-
-  .lg\:bg-\[length\:653px_899px\] {
-    background-size: 653px 899px;
-  }
-
-  .lg\:bg-\[length\:603px_849px\] {
-    background-size: 603px 849px;
-  }
-
-  .lg\:bg-\[length\:553px_799px\] {
-    background-size: 553px 799px;
-  }
-
-  .lg\:bg-\[length\:862px_976px\] {
-    background-size: 862px 976px;
-  }
-
-  .lg\:bg-\[length\:662px_776px\] {
-    background-size: 662px 776px;
-  }
-
-  .lg\:bg-\[length\:632px_746px\] {
-    background-size: 632px 746px;
-  }
-
-  .lg\:bg-\[length\:632px_736px\] {
-    background-size: 632px 736px;
   }
 
   .lg\:bg-\[length\:602px_706px\] {

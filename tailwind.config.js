@@ -9,7 +9,8 @@ module.exports = {
         primary: "#0f172a",
       },
       fontFamily: {
-        roboto: ['Roboto', ...defaultTheme.fontFamily.sans]
+        roboto: ['Roboto', ...defaultTheme.fontFamily.sans],
+        monserrat: ['Monserrat', ...defaultTheme.fontFamily.sans]
       }
     },
   },
