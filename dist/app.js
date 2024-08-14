@@ -59,3 +59,29 @@ darkButton.addEventListener('click', function() {
     }
     
 });
+
+// Cambiar de jobSection
+
+const jobSelection = document.querySelector('#jobSection');
+const articles = document.querySelectorAll('#jobSection article');
+
+jobSelection.addEventListener('click', (event) => {
+    const id = event.target.dataset.id;
+
+    if(id){
+        articles.forEach((articles) => {
+            articles.classList.add('hidden');
+        })
+        const element = document.getElementById(id);
+        element.classList.remove('hidden');
+    }
+})
+
+const jobLinks = document.querySelectorAll('#jobSection button');
+const firstLink = document.querySelector('#link1');
+
+jobLinks.forEach((link) => {
+    link.addEventListener('click', () => {
+        firstLink.classList.remove('dark:bg-slate-700', 'bg-white', 'border-sky-500');
+    });
+});
