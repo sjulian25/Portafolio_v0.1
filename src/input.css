@@ -16,3 +16,9 @@
     transform: rotate(-45deg) translate(-3px, 6px);
     transform-origin: 0% 100%;
 }
+
+@media (min-width: 1024px) {
+    #quien-soy {   
+        height: calc(100vh - 130px);
+    }
+}
