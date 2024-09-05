@@ -39,8 +39,6 @@
     line-height: 30px;
     text-align: center;
     background: none;
-    color: #0c4a6e;
-    opacity: .5;
 }
 
 .carousel__anterior {
@@ -55,7 +53,19 @@
     overflow: hidden;
 }
 
-.carousel__lista img {
-    width: 600px;
-    height: 300px;
+.carousel__indicadores .glider-dot {
+    display: block;
+    width: 30px;
+    height: 5px;
+    background: #0c4a6e;
+    opacity: 0.2;
+    border-radius: 0;
 }
+
+.carousel__indicadores .glider-dot:hover {
+    opacity: 0.5;
+}
+
+.carousel__indicadores .glider-dot.active {
+    opacity: 1;
+} 

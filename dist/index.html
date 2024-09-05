@@ -14,6 +14,7 @@
     <script src="./app.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js" defer></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script>
     <script>
         if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
             document.documentElement.classList.add('dark');
@@ -58,17 +59,17 @@
             <div class="p-10 lg:w-[75%] lg:self-center">
                 <h1 class="text-sky-600 dark:text-sky-300 text-2xl font-bold tracking-widest leading-10">Hola, soy</h1>
                 <p class="py-2 text-3xl font-bold text-slate-600 dark:text-slate-300">Julián Salgado</p>
-                <p class="text-2xl font-bold text-slate-500 dark:text-slate-600">Desarrollador de día, Batman de noche.</p>
+                <p class="text-2xl font-bold text-slate-500 dark:text-slate-600">Junior Dev en el día, y a veces en la noche.</p>
                 <p class="mt-5 text-lg">
                     Soy Ingeniero Electrónico apasionado por construir soluciones eficientes y escalables, asegurando la calidad y funcionalidad de los sistemas. Dentro de mi carrera como desarrollador backend he adquirido conocimiento en tecnologías y herramientas clave como el desarrollo de APIs, diseño y manejo de base de datos y programación en lenguajes como Java y Python. Estoy listo para enfrentar nuevos desafíos y aprovechar oportunidades para desarrollar mis habilidades y experiencia en el campo del desarrollo
                 </p>
 
                 <!-- Redes sociales -->
                  <div class="py-6">
-                    <a href="" class="pr-2 text-2xl hover:text-sky-600"><i class="bi bi-twitter-x px-2"></i></a>
-                    <a href="" class="pr-2 text-2xl hover:text-sky-600"><i class="bi bi-instagram px-2"></i></a>
-                    <a href="https://www.linkedin.com/in/sjulian92" class="pr-2 text-2xl hover:text-sky-600"><i class="bi bi-linkedin px-2"></i></a>
-                    <a href="https://github.com/sjulian25" class="pr-2 text-2xl hover:text-sky-600"><i class="bi bi-github px-2"></i></a>
+                     <a href="https://www.linkedin.com/in/sjulian92" class="pr-2 text-2xl hover:text-sky-600"><i class="bi bi-linkedin px-2"></i></a>
+                     <a href="https://github.com/sjulian25" class="pr-2 text-2xl hover:text-sky-600"><i class="bi bi-github px-2"></i></a>
+                     <a href="https://www.instagram.com/sjulian25/" class="pr-2 text-2xl hover:text-sky-600"><i class="bi bi-instagram px-2"></i></a>
+                     <a href="https://open.spotify.com/user/12137789999?si=b232f13aa5724966" class="pr-2 text-2xl hover:text-sky-600"><i class="bi bi-spotify px-2"></i></a>
                 </div>
                 <div>
                     <a href="#Contactame">
@@ -86,8 +87,8 @@
         </section>
 
         <!-- Experiencia -->
-         <h2 class="text-3xl text-slate-700 dark:text-white font-bold tracking-widest w-[85%] m-auto text-center pt-8" id="Experiencia">Experiencia Laboral</h2>
-         <section class="my-12 flex flex-col w-[84%] m-auto lg:flex-row lg:w-[87%] lg:my-28" id="jobSection">
+        <h2 class="text-3xl text-slate-700 dark:text-white font-bold tracking-widest w-[85%] m-auto text-center pt-8" id="Experiencia">Experiencia Laboral</h2>
+        <section class="my-12 flex flex-col w-[84%] m-auto lg:flex-row lg:w-[87%] lg:my-28" id="jobSection">
             <div class="flex justify-between lg:flex-col lg:w-[20%] text-xs sm:text-base">
                 <button type="button" id="link1" data-id="job1" class="border-b-2 hover:dark:bg-slate-700 w-full px-4 py-1 hover:bg-white focus:bg-white focus:border-sky-500  focus:dark:bg-slate-700 lg:border-l-2 lg:border-b-0 lg:h-full lg:text-left border-sky-500 bg-white dark:bg-slate-700">Energyt</button>
                 <button type="button" data-id="job2" class="border-b-2 hover:dark:bg-slate-700 w-full px-4 py-1 hover:bg-white focus:bg-white focus:border-sky-500  focus:dark:bg-slate-700 lg:border-l-2 lg:border-b-0 lg:h-full lg:text-left">Unibague</button>
@@ -104,15 +105,15 @@
                    <ul>
                        <li class="flex items-center py-2">
                             <span class="pr-2 text-sky-500 font-black">&#9655</span>
-                            <p class="text-stone-900 dark:text-cyan-50 font-normal px-5">Descripción 1</p>
+                            <p class="text-stone-900 dark:text-cyan-50 font-normal px-5">Encargado de gestionar, implementar y verificar el correcto funcionamiento de sistema de monitoreo para el proyecto de agricultura de precisión en cultivos aeropónicos dentro de un entorno controlado.</p>
                         </li >
                         <li class="flex items-center py-2">
                            <span class="pr-2 text-sky-500 font-black">&#9655</span>
-                           <p class="text-stone-900 dark:text-cyan-50 font-normal px-5">Descripción 2</p>
+                           <p class="text-stone-900 dark:text-cyan-50 font-normal px-5">Gestor del despliegue de la plataforma web para el sistema de monitoreo desarrollado en Python, Blynk y ThingSpeak con el fin de poder implementar IoT en el prototipo</p>
                         </li>
                         <li class="flex items-center py-2">
                            <span class="pr-2 text-sky-500 font-black">&#9655</span>
-                           <p class="text-stone-900 dark:text-cyan-50 font-normal px-5">Descripción 3</p>
+                           <p class="text-stone-900 dark:text-cyan-50 font-normal px-5">Responsable del diseño de un sistema fotovoltáico autónomo que tiene como función alimentar el sistema de monitoreo, esto con el proposito de implementar el proyecto en areas de dificil acceso.</p>
                         </li>
                    </ul>
                 </article>
@@ -124,15 +125,15 @@
                     <ul>
                         <li class="flex items-center py-2">
                              <span class="pr-2 text-sky-500 font-black">&#9655</span>
-                             <p class="text-stone-900 dark:text-cyan-50 font-normal px-5">Descripción 1</p>
+                             <p class="text-stone-900 dark:text-cyan-50 font-normal px-5">Responsable de analizar, identificar y mapear los procesos de prestamos de herramientas para el diseño de una prueba piloto de sistema de gestión de prestamos de equipos de laboratorios de ingeniería utilizando diagramas BPMN diseñado con herramientas como Bizagi Modeler.</p>
                          </li >
                          <li class="flex items-center py-2">
                             <span class="pr-2 text-sky-500 font-black">&#9655</span>
-                            <p class="text-stone-900 dark:text-cyan-50 font-normal px-5">Descripción 2</p>
+                            <p class="text-stone-900 dark:text-cyan-50 font-normal px-5">Coencargado en la prueba de tecnologías a implementar en el sistema de gestión de prestamos usando modulos IoT como el M5Stack de AWS y lector RFID para la autenticación del usuario</p>
                          </li>
                          <li class="flex items-center py-2">
                             <span class="pr-2 text-sky-500 font-black">&#9655</span>
-                            <p class="text-stone-900 dark:text-cyan-50 font-normal px-5">Descripción 3</p>
+                            <p class="text-stone-900 dark:text-cyan-50 font-normal px-5">Asignado al modelamiento de la base de datos del sistema de gestión de prestamos de equipos. Además de ser apoyo para el diseño inicial del MockUp del sistema piloto.</p>
                          </li>
                     </ul>
                  </article>
@@ -184,84 +185,99 @@
          <!-- Proyectos -->
           <h3 class="text-3xl text-slate-700 dark:text-white mb-5 pt-8 px-12 font-bold tracking-widest text-center" id="Proyectos">Mis Ultimos Proyectos</h3>
 
-        <section class="my-8 mx-2 m-auto">
+        <section class="my-8 mx-2 lg:mx-8 m-auto">
             <div class="carousel">
                 <div class="carousel__contenedor border-1 rounded-lg bg-white dark:bg-slate-800 m-5">
-                    <button aria-label="Anterior" class="carousel__anterior dark:text-sky-100 dark:opacity-50">
+                    <button aria-label="Anterior" class="carousel__anterior text-sky-950/25 hover:text-sky-950 dark:text-sky-100/50 dark:hover:text-sky-100">
                         <i class="bi bi-chevron-left"></i>
                     </button>
                     
                     <div class="carousel__lista" id="carousel__lista">
                         <div class="carousel__elemento">
-                            <div class="m-2">
-                                <img src="./img/diseñoDBRelacional.jpg" alt="APITaskCover" class="opacity-80 hover:opacity-100">
-                                <h4 class="font-bold my-2">Diseño DB relacional</h4>
-                                <article class="flex justify-between">
-                                    <div class="flex flex-nowrap items-center">
-                                        <span class="bg-slate-200 rounded-lg px-2 mr-2 text-slate-700">Postgressql</span>
-                                    </div>
-                                    <div class="text-xl text-slate-600 dark:text-slate-200 pr-2 flex flex-wrap">
-                                        <a href="" class="hover:text-sky-600"><i class="bi bi-github px-2"></i></a>
-                                        <a href="" class="hover:text-sky-600"><i class="bi bi-eye px-2"></i></a>
-                                    </div>
-                                </article>
+                            <div class="m-2 flex flex-col">
+                                <div>
+                                    <img src="./img/diseñoDBRelacional.jpg" alt="APITaskCover" class="opacity-80 hover:opacity-100">
+                                </div>
+                                <div  class="flex-wrap">
+                                    <h4 class="font-bold my-2">Diseño DB relacional</h4>
+                                    <article class="flex flex-wrap place-content-between space-y-1">
+                                        <div class="flex items-center">
+                                            <span class="bg-slate-200 rounded-lg px-2 mr-2 text-slate-700">PostgresSQL</span>
+                                        </div>
+                                        <div class="text-xl text-slate-600 dark:text-slate-200 pr-2 flex flex-wrap">
+                                            <a href="" class="hover:text-sky-600"><i class="bi bi-github px-2"></i></a>
+                                        </div>
+                                    </article>
+                                </div>
                             </div>
                         </div>
     
                         <div class="carousel__elemento">
-                            <div class="m-2">
-                                <img src="./img/portafolioCover.jpeg" alt="portafolioCover" class="opacity-80 hover:opacity-100">
-                                <h4 class="font-bold my-2">Portafolio Web</h4>
-                                <article class="flex justify-between">
-                                    <div class="flex flex-nowrap items-center">
-                                        <span class="bg-slate-200 rounded-lg px-2 mr-2 text-slate-700">HTML</span>
-                                        <span class="bg-slate-200 rounded-lg px-2 mr-2 text-slate-700">Taildwind</span>
-                                        <span class="bg-slate-200 rounded-lg px-2 mr-2 text-slate-700">JS</span>
-                                    </div>
-                                    <div class="text-xl text-slate-600 dark:text-slate-200 pr-2 flex flex-nowrap">
-                                        <a href="" class="hover:text-sky-600"><i class="bi bi-github px-2"></i></a>
-                                        <a href="" class="hover:text-sky-600"><i class="bi bi-eye px-2"></i></a>
-                                    </div>
-                                </article>
+                            <div class="m-2 flex flex-col">
+                                <div>
+                                    <img src="./img/portafolioCover.jpeg" alt="portafolioCover" class="opacity-80 hover:opacity-100">
+                                </div>
+                                <div class="flex-wrap">
+                                    <h4 class="font-bold my-2">Portafolio Web</h4>
+                                    <article class="flex flex-wrap place-content-between space-y-1">
+                                        <div class="flex items-center">
+                                            <span class="bg-slate-200 rounded-lg px-2 mr-2 text-slate-700">HTML</span>
+                                            <span class="bg-slate-200 rounded-lg px-2 mr-2 text-slate-700">Taildwind</span>
+                                            <span class="bg-slate-200 rounded-lg px-2 mr-2 text-slate-700">JS</span>
+                                        </div>
+                                        <div class="text-xl text-slate-600 dark:text-slate-200 pr-2 flex flex-nowrap">
+                                            <a href="https://github.com/sjulian25/Portafolio_v0.1.git" class="hover:text-sky-600"><i class="bi bi-github px-2"></i></a>
+                                            <a href="https://portafolio-v0-1-ecru.vercel.app/" class="hover:text-sky-600"><i class="bi bi-eye px-2"></i></a>
+                                        </div>
+                                    </article>
+                                </div>
                             </div>
                         </div>
 
                         <div class="carousel__elemento">
                             <div class="m-2">
-                                <img src="./img/mokeponCover.png" alt="mokeponCover" class="opacity-80 hover:opacity-100">
-                                <h4 class="font-bold my-2">Minijuego Web - Mokepon</h4>
-                                <article class="flex justify-between">
-                                    <div class="flex flex-nowrap items-center">
-                                        <span class="bg-slate-200 rounded-lg px-2 mr-2 text-slate-700">HTML</span>
-                                        <span class="bg-slate-200 rounded-lg px-2 mr-2 text-slate-700">CSS</span>
-                                        <span class="bg-slate-200 rounded-lg px-2 mr-2 text-slate-700">JS</span>
-                                    </div>
-                                    <div class="text-xl text-slate-600 dark:text-slate-200 pr-2 flex flex-nowrap">
-                                        <a href="" class="hover:text-sky-600"><i class="bi bi-github px-2"></i></a>
-                                        <a href="" class="hover:text-sky-600"><i class="bi bi-eye px-2"></i></a>
-                                    </div>
-                                </article>
+                                <div>
+                                    <img src="./img/mokeponCover.png" alt="mokeponCover" class="opacity-80 hover:opacity-100">
+                                </div>
+                                <div class="flex-wrap">
+                                    <h4 class="font-bold my-2">Minijuego Web - Mokepon</h4>
+                                    <article class="flex flex-wrap place-content-between space-y-1">
+                                        <div class="flex items-center">
+                                            <span class="bg-slate-200 rounded-lg px-2 mr-2 text-slate-700">HTML</span>
+                                            <span class="bg-slate-200 rounded-lg px-2 mr-2 text-slate-700">CSS</span>
+                                            <span class="bg-slate-200 rounded-lg px-2 mr-2 text-slate-700">JS</span>
+                                        </div>
+                                        <div class="text-xl text-slate-600 dark:text-slate-200 pr-2 flex flex-nowrap">
+                                            <a href="" class="hover:text-sky-600"><i class="bi bi-github px-2"></i></a>
+                                            <a href="" class="hover:text-sky-600"><i class="bi bi-eye px-2"></i></a>
+                                        </div>
+                                    </article>
+                                </div>
                             </div>
                         </div>
 
                         <div class="carousel__elemento">
                             <div class="m-2">
-                                <img src="./img/roboclawCover.jpeg" alt="mokeponCover" class="opacity-80 hover:opacity-100">
-                                <h4 class="font-bold my-2">Roboclaw Node</h4>
-                                <article class="flex justify-between">
-                                    <div class="flex flex-nowrap items-center">
-                                        <span class="bg-slate-200 rounded-lg px-2 mr-2 text-slate-700">ROS</span>
-                                        <span class="bg-slate-200 rounded-lg px-2 mr-2 text-slate-700">Python</span>
-                                    </div>
-                                    <div class="text-xl text-slate-600 dark:text-slate-200 pr-2 flex flex-nowrap">
-                                        <a href="" class="hover:text-sky-600"><i class="bi bi-github px-2"></i></a>
-                                    </div>
-                                </article>
+                                <div>
+                                    <img src="./img/roboclawCover.jpeg" alt="mokeponCover" class="opacity-80 hover:opacity-100">
+                                </div>
+                                <div class="flex-wrap">
+                                    <h4 class="font-bold my-2">Roboclaw Node</h4>
+                                    <article class="flex flex-wrap place-content-between space-y-1">
+                                        <div class="flex items-center">
+                                            <span class="bg-slate-200 rounded-lg px-2 mr-2 text-slate-700">ROS</span>
+                                            <span class="bg-slate-200 rounded-lg px-2 mr-2 text-slate-700">Python</span>
+                                        </div>
+                                        <div class="text-xl text-slate-600 dark:text-slate-200 pr-2 flex flex-nowrap">
+                                            <a href="https://github.com/sjulian25/roboclaw_node.git" class="hover:text-sky-600"><i class="bi bi-github px-2"></i></a>
+                                        </div>
+                                    </article>
+                                </div>
                             </div>
                         </div>
                     </div>
     
-                    <button aria-label="Siguiente" class="carousel__siguiente dark:text-sky-100 dark:opacity-50">
+                    <button aria-label="Siguiente" class="carousel__siguiente text-sky-950/25 hover:text-sky-950 dark:text-sky-100/50 dark:hover:text-sky-100">
                         <i class="bi bi-chevron-right"></i>
                     </button>
                 </div>
@@ -269,21 +285,113 @@
                 <div role="tablist" class="carousel__indicadores"></div>
             </div>
         </section>
-        
+
+        <h3 class="text-3xl text-slate-700 dark:text-white mb-5 pt-8 px-12 font-bold tracking-widest text-center">Estudios y Habilidades</h3>
+        <section class="conocimientosHabilidades flex flex-col lg:flex-row place-content-around" id="conocimientosHabilidades">
+            <div class="w-[84%] lg:w-[50%]">
+                <table class="mt-12 mx-10 w-full border-collapse text-left">
+                    <thead class="sticky top-0 border-b dark:border-slate-300/10 dark:bg-slate-900/75 px-6 py-5 backdrop-blur">
+                        <tr>
+                            <th class="py-4 pr-8 text-sm font-semibold text-slate-600 dark:text-slate-300">Año</th>
+                            <th class="py-4 pr-8 text-sm font-semibold text-slate-600 dark:text-slate-300">Estudio</th>
+                            <th class="hidden py-4 pr-8 text-sm font-semibold text-slate-600 dark:text-slate-300 lg:block">Lugar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b border-slate-500/25 dark:border-slate-300/10 last:border-none">
+                            <td class="py-4 pr-4 align-top text-sm">
+                                <div class="translate-y-px">Actualidad</div>
+                            </td>
+                            <td class="py-4 pr-4 align-top font-semibold leading-snug text-slate-700 dark:text-slate-200">
+                                <div class="translate-y-px">Bootcamp en desarrollo backend con python</div>
+                            </td>
+                            <td class="hidden py-4 pr-4 align-top text-sm lg:table-cell">
+                                <div class="translate-y-px whitespace-nowrap">Enyoi</div>
+                            </td>
+                        </tr>
+                        <tr class="border-b border-slate-500/25 dark:border-slate-300/10 last:border-none">
+                            <td class="py-4 pr-4 align-top text-sm">
+                                <div class="translate-y-px">2024</div>
+                            </td>
+                            <td class="py-4 pr-4 align-top font-semibold leading-snug text-slate-700 dark:text-slate-200">
+                                <div class="translate-y-px">Diplomado en gestión industrial</div>
+                            </td>
+                            <td class="hidden py-4 pr-4 align-top text-sm lg:table-cell">
+                                <div class="translate-y-px whitespace-nowrap">Univeridad de Ibagué</div>
+                            </td>
+                        </tr>
+                        <tr class="border-b border-slate-500/25 dark:border-slate-300/10 last:border-none">
+                            <td class="py-4 pr-4 align-top text-sm">
+                                <div class="translate-y-px">2024</div>
+                            </td>
+                            <td class="py-4 pr-4 align-top font-semibold leading-snug text-slate-700 dark:text-slate-200">
+                                <div class="translate-y-px">Diplomado en Fundamentos de Ingeniería de Software</div>
+                            </td>
+                            <td class="hidden py-4 pr-4 align-top text-sm lg:table-cell">
+                                <div class="translate-y-px whitespace-nowrap">Platzi</div>
+                            </td>
+                        </tr>
+                        <tr class="border-b border-slate-500/25 dark:border-slate-300/10 last:border-none">
+                            <td class="py-4 pr-4 align-top text-sm">
+                                <div class="translate-y-px">2024</div>
+                            </td>
+                            <td class="py-4 pr-4 align-top font-semibold leading-snug text-slate-700 dark:text-slate-200">
+                                <div class="translate-y-px">Pregrado en Ingeniería Electrónica</div>
+                            </td>
+                            <td class="hidden py-4 pr-4 align-top text-sm lg:table-cell">
+                                <div class="translate-y-px whitespace-nowrap">Univeridad de Ibagué</div>
+                            </td>
+                        </tr>
+                        <tr class="border-b border-slate-500/25 dark:border-slate-300/10 last:border-none">
+                            <td class="py-4 pr-4 align-top text-sm">
+                                <div class="translate-y-px">2021</div>
+                            </td>
+                            <td class="py-4 pr-4 align-top font-semibold leading-snug text-slate-700 dark:text-slate-200">
+                                <div class="translate-y-px">Diplomado en Python: Comprenhensions, Lambdas y Manejo de errores</div>
+                            </td>
+                            <td class="hidden py-4 pr-4 align-top text-sm lg:table-cell">
+                                <div class="translate-y-px whitespace-nowrap">Platzi</div>
+                            </td>
+                        </tr>
+                        <tr class="border-b border-slate-500/25 dark:border-slate-300/10 last:border-none">
+                            <td class="py-4 pr-4 align-top text-sm">
+                                <div class="translate-y-px">2021</div>
+                            </td>
+                            <td class="py-4 pr-4 align-top font-semibold leading-snug text-slate-700 dark:text-slate-200">
+                                <div class="translate-y-px">Diplomado en Manejo profesional de Git y GitHub</div>
+                            </td>
+                            <td class="hidden py-4 pr-4 align-top text-sm lg:table-cell">
+                                <div class="translate-y-px whitespace-nowrap">Platzi</div>
+                            </td>
+                        </tr>
+                        
+                    </tbody>
+
+                </table>
+            </div>
+
+            
+            <div class="flex flex-col lg:flex-row w-1/4 lg:w-2/5" id="chartHabilidades"></div>
+            
+
+        </section>
 
           <!-- Contacto -->
            <h3 class="text-3xl text-slate-700 dark:text-white mt-12 mb-10 px-10 font-bold tracking-widest text-center">Contáctame</h3>
            
            <section class="flex flex-col w-[90%] m-auto" id="Contactame">
-            <form action="" class="w-[90%] md:max-w-[600px] m-auto">
+            <form action="" class="w-[90%] md:max-w-[600px] m-auto" id="contactForm">
                 <div>
                     <input placeholder="info@ejemplo.com" type="email" name="email" id="email" class="p-3 w-full rounded-lg transition ease-in-out duration-200 focus:outline-none focus:ring focus:ring-blue-400 dark:bg-slate-950">
+                    <span class="error-message" id="emailError"></span>
                 </div>
                 <div class="my-3">
                     <input placeholder="Nombre" type="text" name="nombre" id="nombre" class="p-3 w-full rounded-lg transition ease-in-out duration-200 focus:outline-none focus:ring focus:ring-blue-400 dark:bg-slate-950">
+                    <span class="error-message" id="nameError"></span>
                 </div>
                 <div class="my-3">
                     <textarea placeholder="Mensaje" name="msj" id="msj" rows="5" class="p-3 w-full rounded-lg transition ease-in-out duration-200 focus:outline-none focus:ring focus:ring-blue-400 max-h-[200px] min-h-[48px] dark:bg-slate-950"></textarea>
+                    <span class="error-message" id="messageError"></span>
                 </div>
                 <div class="my-3">
                     <button class="bg-sky-600 text-white p-3 w-full rounded-lg text-xl tracking-widest hover:bg-sky-800 dark:hover:bg-sky-700 transition ease-in">Enviar mensaje</button>
@@ -297,10 +405,10 @@
                 <footer class="text-center mt-12 mb-5">
                     <p>Diseño inspirado de Emprinnos y desarrollado por GadoDev.</p>
                     <div class="my-2">
-                        <a href=""><i class="bi bi-twitter-x px-2 hover:text-sky-500"></i></a>
-                        <a href=""><i class="bi bi-instagram px-2 hover:text-sky-500"></i></a>
-                        <a href=""><i class="bi bi-linkedin px-2 hover:text-sky-500"></i></a>
-                        <a href=""><i class="bi bi-github px-2 hover:text-sky-500"></i></a>
+                        <a href="https://www.linkedin.com/in/sjulian92" class="pr-2 text-2xl hover:text-sky-600"><i class="bi bi-linkedin px-2"></i></a>
+                        <a href="https://github.com/sjulian25" class="pr-2 text-2xl hover:text-sky-600"><i class="bi bi-github px-2"></i></a>
+                        <a href="https://www.instagram.com/sjulian25/" class="pr-2 text-2xl hover:text-sky-600"><i class="bi bi-instagram px-2"></i></a>
+                        <a href="https://open.spotify.com/user/12137789999?si=b232f13aa5724966" class="pr-2 text-2xl hover:text-sky-600"><i class="bi bi-spotify px-2"></i></a>
                     </div>
                 </footer>
             </section>
