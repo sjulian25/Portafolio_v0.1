@@ -113,41 +113,6 @@ window.addEventListener('load', function(){
 });
 
 // Chart
-// const printCharts = () => {
-//     renderCharts()
-// }
-
-// const renderCharts = () => {
-
-//     const data = {
-//             labels: [
-//                 'Python',
-//                 'Java',
-//                 'JavaScript',
-//                 'HTML',
-//                 'CSS + Taildwind',
-//                 'Postgres'
-//               ],
-//               datasets: [{
-//                 label: 'Tecnologías usadas en el último semestre',
-//                 data: [0.15, 0.13, 0.25, 0.15, 0.25, 0.07],
-//                 backgroundColor: [
-//                   'rgb(74, 36, 157)',
-//                   'rgb(130, 17, 49)',
-//                   'rgb(249, 226, 175)',
-//                   'rgb(220, 107, 25)',
-//                   'rgb(0, 159, 189)',
-//                   'rgb(18, 91, 154)'
-//                 ],
-//                 hoverOffset: 4
-//               }]
-//         }
-    
-
-//     new Chart(document.getElementById('chartHabilidades'), {type: 'doughnut', data})
-
-// }
-
 var chartDom = document.getElementById('chartHabilidades');
 var myChart = echarts.init(chartDom, () => {
     if(localStorage.getItem('color-theme' === 'dark')){

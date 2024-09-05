@@ -1366,6 +1366,19 @@ video {
     width: 87%;
   }
 
+  .lg\:w-fit {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+
+  .lg\:w-\[100\%\] {
+    width: 100%;
+  }
+
+  .lg\:w-\[90\%\] {
+    width: 90%;
+  }
+
   .lg\:flex-row {
     flex-direction: row;
   }
