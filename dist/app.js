@@ -172,3 +172,21 @@ option && myChart.setOption(option);
 
 // Contact me
 
+let sendMessageButton = document.getElementById('sendButton');
+sendMessageButton.addEventListener('click', function(e) {
+    e.preventDefault()
+    let name = document.getElementById('nombre').value;
+    let email = document.getElementById('email').value;
+    let message = document.getElementById('msj').value;
+    let body = 'Name: ' + name + '<br/> Email: ' + email + '<br/> Message: ' + message 
+
+    Email.send({
+        SecureToken : "f0dff6d2-4606-4dc2-b848-8a362b77f000",
+        To : 'srjulianc25@gmail.com',
+        From : 'srjulianc25@gmail.com',
+        Subject : "Portafolio Web v0.1 - Contact Message",
+        Body : body
+    }).then(
+      message => alert(message)
+    );
+})
